@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="title d-flex align-items-start">
+    <h1>
+      <%= @article.title %>
+      <%= link_to edit_article_path(@article) do %>
+        <i class="fa-solid fa-pencil mx-2"></i>
+      <% end %>
+      <%= link_to article_path(@article), data: { turbo_method: :delete, turbo_confirm: "Delete #{@article.title}?" } do %>
+        <i class="fa-solid fa-trash-can"></i>
+      <% end %>
+    </h1>
+  </div>
+  <p><%= @article.content %></p>
+  <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+  <p>Enim voluptatem delectus voluptas corrupti nostrum quibusdam unde odit, molestiae quia quae, at sapiente vitae ipsa totam! Ex totam voluptas iusto molestias!</p>
+  <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h3>
+  <p>Ea veniam maxime non? Officiis nesciunt, error soluta tempore
+    debitis alias ut adipisci quisquam doloribus! Assumenda fugit voluptatibus, officiis sequi fugiat velit? Lorem ipsum dolor sit amet consectetur
+    adipisicing elit. Nihil, tempore doloribus hic quod ipsa sit expedita? Cumque est sapiente aspernatur nihil quisquam perspiciatis molestias veritatis consequatur? Id alias eligendi deleniti!
+  </p>
+</div>

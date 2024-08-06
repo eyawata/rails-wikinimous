@@ -1,0 +1,9 @@
+<h1>Edit this Article</h1>
+<%= form_with model: @article do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title, class: "form-control" %>
+  <%= f.label :content %>
+  <%= f.text_area :content, class: "form-control" %>
+  <%= f.submit 'Edit Article', class: 'btn btn-success mt-3' %>
+<% end %>
+<%= link_to "Back to Articles", articles_path %>

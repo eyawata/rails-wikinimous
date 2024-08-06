@@ -13,3 +13,56 @@
  *= require_tree .
  *= require_self
  */
+
+
+.card {
+  border: none;
+}
+
+.card-body {
+  background-color:rgba(188, 187, 187, 0.112);
+  border: 0.5px solid rgb(245, 245, 245);
+  margin: 5px;
+  border-radius: 10px;
+}
+
+a {
+  color:black;
+}
+
+.card-title {
+  font-family: "Libre Franklin", serif;
+}
+
+.card-text {
+  font-family: "Lora", serif;
+  font-style: italic;
+  color: rgb(113, 109, 109)
+}
+
+.footer {
+  background: #F4F4F4;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+  padding: 0px 50px;
+  color: rgba(0,0,0,0.3);
+}
+.footer-links {
+  display: flex;
+  align-items: center;
+}
+.footer-links a {
+  color: black;
+  opacity: 0.15;
+  text-decoration: none;
+  font-size: 24px;
+  padding: 0px 10px;
+}
+.footer-links a:hover {
+  opacity: 1;
+}
+.footer .fa-heart {
+  color: #D23333;
+}
